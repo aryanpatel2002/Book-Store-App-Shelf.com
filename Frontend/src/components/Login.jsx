@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useForm } from "react-hook-form"
+import axios from 'axios'
+import toast from 'react-hot-toast'
 
 
 function Login() {
@@ -10,7 +12,36 @@ function Login() {
     handleSubmit,
     formState: { errors },
   } = useForm()
-  const onSubmit = (data) => console.log(data);
+  const onSubmit =async (data) => {
+    const userInfo = {
+      email: data.email,
+      password: data.password,
+    };
+    
+    await axios.post("http://localhost:4001/user/login", userInfo, {
+      headers: { "Content-Type": "application/json" }, // Ensures the content type is set correctly
+    })
+    .then((res) => {
+      console.log(res.data);
+      if (res.data) {
+        toast.success('Logged in Successfully');
+        document.getElementById("my_modal_3").close();
+        setTimeout(()=> {
+          window.location.reload();
+          localStorage.setItem("Users", JSON.stringify(res.data.user));
+        },1000)
+        
+      }
+      
+    })
+    .catch((err) => {
+      if (err.response) {
+        console.log(err);
+        toast.error("Error: " + err.response.data.message);
+        setTimeout(()=> {},2000)
+      }
+    });
+  }
 
   return (
     <>
@@ -42,7 +73,7 @@ function Login() {
         {errors.password && <span className='text-sm text-red-400'>This field is required</span>}
     </div>
     <div className='flex justify-items-end space-x-48  mt-4 '>
-        <button className='bg-red-500 text-white rounded-md p-3 py-3 md:px-3 md:py-1 hover:bg-red-600'>Login</button>
+        <button className='bg-red-500 text-white rounded-md p-3 py-1 md:px-3 md:py-1 hover:bg-red-600'>Login</button>
         <p className='mt-1'>Not registered? <Link to="/Signup" className='justify-end underline text-blue-500 cursor-pointer duration-300 '>Signup</Link>{" "}</p>
     </div>
     </form>
