@@ -40,6 +40,7 @@ cd Book-Store-App-Shelf.com
 3. Install the backend dependencies:
 
 cd backend
+```bash
 npm install
 
 
