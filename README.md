@@ -90,4 +90,4 @@ These dependencies are listed in the package.json files within the backend and f
 - **MongoDB** - For providing the NoSQL database.
 - **Express** - For the server framework.
 - **React** - For building the user interface.
-Node.js - For the runtime environment.
+-**Node.js** - For the runtime environment.
