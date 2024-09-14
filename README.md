@@ -75,19 +75,19 @@ Set up your MongoDB connection string in the backend configuration file.
 Open your browser and navigate to http://localhost:3000 to access the application.
 
 ## Project Structure
-**backend/** - Contains the server-side code and API endpoints.
-**frontend/** - Contains the client-side code and user interface.
-**README.md** - This README file.
+-**backend/** - Contains the server-side code and API endpoints.
+-**frontend/** - Contains the client-side code and user interface.
+-**README.md** - This README file.
 
 ## Dependencies
 The project requires the following libraries and tools:
 
-**Backend:** Express, MongoDB, NodeJS, ExpressJS
-**Frontend:** React, React Router,etc.
+-**Backend:** Express, MongoDB, NodeJS, ExpressJS
+-**Frontend:** React, React Router,etc.
 These dependencies are listed in the package.json files within the backend and frontend directories.
 
 ## Acknowledgments
-MongoDB - For providing the NoSQL database.
-Express - For the server framework.
-React - For building the user interface.
+-**MongoDB** - For providing the NoSQL database.
+-**Express** - For the server framework.
+-**React** - For building the user interface.
 Node.js - For the runtime environment.
