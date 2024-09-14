@@ -32,9 +32,9 @@ Ensure you have the following installed:
    
 2. Navigate to the project directory:
 
-Copy code
-```bash
-cd Book-Store-App-Shelf.com
+   Copy code
+   ```bash
+   cd Book-Store-App-Shelf.com
 
 
 3. Install the backend dependencies:
