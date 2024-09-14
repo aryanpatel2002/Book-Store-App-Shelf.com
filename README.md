@@ -28,42 +28,48 @@ Ensure you have the following installed:
 1. Clone the repository:
    ```bash
    git clone https://github.com/aryanpatel2002/Book-Store-App-Shelf.com.git
-Navigate to the project directory:
 
-bash
+   
+2. Navigate to the project directory:
+
 Copy code
+```bash
 cd Book-Store-App-Shelf.com
-Install the backend dependencies:
 
-bash
-Copy code
+
+3. Install the backend dependencies:
+
 cd backend
 npm install
-Install the frontend dependencies:
+
+
+4. Install the frontend dependencies:
 
 bash
 Copy code
 cd ../frontend
 npm install
-Configure the backend:
+
+
+5. Configure the backend:
 
 Set up your MongoDB connection string in the backend configuration file.
-Usage
-Start the backend server:
+
+
+6. Start the backend server:
 
 bash
-Copy code
 cd backend
 npm start
-Start the frontend development server:
 
-bash
-Copy code
+
+7. Start the frontend development server:
+
 cd ../frontend
 npm start
 Open your browser and navigate to http://localhost:3000 to access the application.
 
-Project Structure
+## Project Structure
 backend/ - Contains the server-side code and API endpoints.
 frontend/ - Contains the client-side code and user interface.
 README.md - This README file.
@@ -74,10 +80,7 @@ Backend: Express, MongoDB, Mongoose, etc.
 Frontend: React, React Router, Axios, etc.
 These dependencies are listed in the package.json files within the backend and frontend directories.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Acknowledgments
+## Acknowledgments
 MongoDB - For providing the NoSQL database.
 Express - For the server framework.
 React - For building the user interface.
