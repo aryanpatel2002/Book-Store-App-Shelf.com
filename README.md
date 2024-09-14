@@ -39,46 +39,51 @@ Ensure you have the following installed:
 
 3. Install the backend dependencies:
 
-cd backend
-```bash
-npm install
+   Copy code
+   ```bash
+   cd backend
+   npm install
 
 
 4. Install the frontend dependencies:
 
-bash
-Copy code
-cd ../frontend
-npm install
+
+   Copy code
+   ```bash
+   cd ../frontend
+   npm install
 
 
-5. Configure the backend:
+6. Configure the backend:
 
 Set up your MongoDB connection string in the backend configuration file.
 
 
 6. Start the backend server:
 
-bash
-cd backend
-npm start
+   Copy code
+   ```bash
+   cd backend
+   npm start
 
 
-7. Start the frontend development server:
-
-cd ../frontend
-npm start
+8. Start the frontend development server:
+   Copy code
+   ```bash
+   cd ../frontend
+   npm start
 Open your browser and navigate to http://localhost:3000 to access the application.
 
 ## Project Structure
-backend/ - Contains the server-side code and API endpoints.
-frontend/ - Contains the client-side code and user interface.
-README.md - This README file.
-Dependencies
+**backend/** - Contains the server-side code and API endpoints.
+**frontend/** - Contains the client-side code and user interface.
+**README.md** - This README file.
+
+## Dependencies
 The project requires the following libraries and tools:
 
-Backend: Express, MongoDB, Mongoose, etc.
-Frontend: React, React Router, Axios, etc.
+**Backend:** Express, MongoDB, NodeJS, ExpressJS
+**Frontend:** React, React Router,etc.
 These dependencies are listed in the package.json files within the backend and frontend directories.
 
 ## Acknowledgments
